@@ -11,8 +11,37 @@
 header{
     background-color: aqua;
     grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
 }
 
+header > *{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.row-1{
+    padding-top: 10px;
+}
+.row-2 > *{
+    display: flex;
+}
+.main-profile > *{
+    padding: 20px;
+}
+
+
+.header-buttons{
+    display:flex;
+
+}
+
+.header-buttons li{
+    padding:5px;
+    list-style: none;
+}
 
 /* SIDEBAR */
 .sidebar{
@@ -36,5 +65,40 @@ main .projects{
 
 main .misc{
     background-color: lightseagreen;
+    display: grid;
 }
 
+
+.projects{
+    padding: 15px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.project{
+    background-color: lightpink;
+}
+
+.announ{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 300px;;
+    gap:5px;
+    padding:20px;
+}
+
+.an-card{
+    background-color: lightgreen;
+}
+
+
+.trending{
+    display: grid;
+    grid-gap:5px;
+    padding:20px;
+   
+}
+
+.trend-card{
+    background-color: lightskyblue;
+}
