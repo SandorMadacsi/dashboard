@@ -166,6 +166,12 @@ main .misc{
     display: grid;
 }
 
+.main{
+
+    display: grid;
+    padding: 20px 20px;
+    grid-template-rows: 35px;
+}
 
 .projects{
     padding: 15px;
@@ -200,10 +206,15 @@ main .misc{
     justify-content: space-evenly;
 }
 
+
+.misc{
+display: grid;
+grid-template-columns: 300px;
+}
+
 .announ{
-    background-color: blue;
+    background-color: lightgrey;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 300px;
     gap:5px;
     padding:20px;
 }
@@ -211,6 +222,12 @@ main .misc{
 .an-card{
     background-color: lightgreen;
     padding: 0px 15px;
+    padding: 20px 40px 20px 20px;
+    border-bottom: 1px solid black;
+}
+
+.an-card:last-child{
+    border-bottom: none;
 }
 
 
@@ -222,9 +239,12 @@ main .misc{
 }
 
 .trend-card{
+    padding: 20px 40px 20px 20px;
     background-color: lightskyblue;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    grid-gap: 10px;
+    justify-content: space-around;
     align-items: center;
 }
 
