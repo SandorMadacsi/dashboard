@@ -6,7 +6,7 @@
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template: auto 1fr /1fr 4fr;
+    grid-template: auto 1fr /1fr 5fr;
 
 }
 
@@ -20,7 +20,7 @@ header{
 
 header > *{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -28,26 +28,79 @@ header > *{
 .row-1{
     padding-top: 10px;
 }
+
+.row-1 > *{
+    display: flex;
+    
+}
+
+.row-1 .left{
+    flex: 0.6;
+    justify-content: flex-start;
+    
+}
+
+
+
+.row-1 .right{
+    flex: 0.3;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.row-1 .left input{
+    flex: 0.8;
+    border-radius: 50px;
+}
+
+.row-1,
+.row-2
+{
+    padding: 20px 0;
+}
+
 .row-2 > *{
     display: flex;
 }
-.main-profile > *{
-    padding: 20px;
+
+.row-2 .left-2 {
+    flex:0.3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-2 .right-2 {
+    flex:0.3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row-1 .left,
+.row-2 .left-2{
+    margin-left:30px;
 }
 
 .profile-img{
     border-radius: 50%;
     width: 50px;
+    
+}
+.left label,
+.left-2 .notification{
+    margin-right: 20px;
 }
 .header-buttons{
-    display:flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
 
 }
 
-.main-menu ul{
-    border: 2px solid green;
 
-}
+
+
+
 
 .header-buttons li,
 .main-menu li,
@@ -62,9 +115,21 @@ header > *{
     background-color: lightblue;
     grid-column: 1;
     grid-row: 1/3;
+
 }
 
 
+.main-menu {
+    margin-top: 25px;
+    margin-bottom:40px;
+
+
+}
+
+.sidebar .main-menu ul,
+.sidebar .second-menu ul{
+    padding-left: 10px;
+}
 
 .sidebar .main-menu ul li,
 .sidebar .second-menu ul li{
@@ -110,16 +175,28 @@ main .misc{
 }
 
 .project{
+    padding: 30px 20px ;
     background-color: lightpink;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.project > *{
+    padding-bottom: 10px;
 }
 
 
+.project-nav{
+    display: flex;
+    justify-content: flex-end;
+}
 .project-nav ul{
+    padding-left: 0;
+    flex:0.5;
     display: flex;
     list-style: none;
+    
     justify-content: space-evenly;
 }
 
