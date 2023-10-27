@@ -546,14 +546,46 @@ video {
   display: block;
 }
 
-.bg-red-400 {
+.bg-stone-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
 
-* {
-  border: 1px solid red;
-  margin: 0;
+.bg-stone-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 64 60 / var(--tw-bg-opacity));
+}
+
+.bg-stone-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-stone-200 {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+
+.text-stone-800 {
+  --tw-text-opacity: 1;
+  color: rgb(41 37 36 / var(--tw-text-opacity));
+}
+
+.text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
 }
 
 .grid-container{
@@ -565,7 +597,6 @@ video {
 /* HEADER */
 
 header{
-  background-color: aqua;
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
@@ -652,11 +683,20 @@ header > *{
   list-style: none;
 }
 
+.header-buttons li{
+  background-color: #a8a29e;
+  font-weight: 600;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+
 /* SIDEBAR */
 
 .sidebar{
   grid-column: 1;
   grid-row: 1/3;
+  border: none;
 }
 
 .main-menu {
@@ -676,26 +716,27 @@ header > *{
 }
 
 .icon{
+  fill: #d6d3d1;
   width: 35px;
   padding-right: 10px;
-  border: 1px solid red;
 }
 
 .main-icon{
   padding: 0px;
   width: 40px;
-  border: 1px solid red;
+}
+
+.sidebar svg{
+  fill: #292524;
 }
 
 /* MAIN */
 
 main{
-  background-color: lightgoldenrodyellow;
   display: flex;
 }
 
 main .projects{
-  background-color: lightcoral;
   flex: 1;
 }
 
@@ -718,10 +759,11 @@ main .misc{
 
 .project{
   padding: 30px 20px ;
-  background-color: lightpink;
+  background-color:#1c1917;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-radius: 20px;
 }
 
 .project > *{
@@ -753,10 +795,11 @@ main .misc{
 }
 
 .an-card{
-  background-color: lightgreen;
+  background-color:#292524;
   padding: 0px 15px;
   padding: 20px 40px 20px 20px;
   border-bottom: 1px solid black;
+  border-radius: 10px;
 }
 
 .an-card:last-child{
@@ -764,14 +807,15 @@ main .misc{
 }
 
 .trending{
+  margin: 20px;
   display: grid;
   grid-gap:5px;
   padding:20px;
+  background-color: #292524;
+  border-radius: 29px;
 }
 
 .trend-card{
-  padding: 20px 40px 20px 20px;
-  background-color: lightskyblue;
   display: grid;
   grid-template: 1fr / 1fr 2fr;
   grid-gap: 10px;

@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 
-* {
-    border: 1px solid red;
-    margin: 0;
-}
 
 .grid-container{
     height: 100vh;
@@ -15,9 +11,11 @@
 
 }
 
+
+
+
 /* HEADER */
 header{
-    background-color: aqua;
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
@@ -44,7 +42,6 @@ header > *{
     justify-content: flex-start;
     
 }
-
 
 
 .row-1 .right{
@@ -96,13 +93,12 @@ header > *{
     margin-right: 20px;
 }
 .header-buttons{
+   
     display: flex;
     justify-content: space-evenly;
     flex: 1;
 
 }
-
-
 
 
 
@@ -114,11 +110,20 @@ header > *{
     list-style: none;
 }
 
+.header-buttons li{
+    background-color: #a8a29e;
+    font-weight: 600;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
 /* SIDEBAR */
 
 .sidebar{
     grid-column: 1;
     grid-row: 1/3;
+    border: none;
 
 }
 
@@ -143,25 +148,30 @@ header > *{
 }
 
 .icon{
+    fill: #d6d3d1;
     width: 35px;
     padding-right: 10px;
-    border: 1px solid red;
+
 }
 .main-icon{
     padding: 0px;
     width: 40px;
-    border: 1px solid red;
+
+}
+
+.sidebar svg{
+    fill: #292524;
 }
 
 /* MAIN */
 main{
-    background-color: lightgoldenrodyellow;
+
     display: flex;
     
 }
 
 main .projects{
-    background-color: lightcoral;
+
     flex: 1;
 }
 
@@ -185,10 +195,11 @@ main .misc{
 
 .project{
     padding: 30px 20px ;
-    background-color: lightpink;
+    background-color:#1c1917;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 20px;
 }
 
 .project > *{
@@ -222,10 +233,11 @@ grid-template-columns: 300px;
 }
 
 .an-card{
-    background-color: lightgreen;
+    background-color:#292524;
     padding: 0px 15px;
     padding: 20px 40px 20px 20px;
     border-bottom: 1px solid black;
+    border-radius: 10px;
 }
 
 .an-card:last-child{
@@ -234,15 +246,17 @@ grid-template-columns: 300px;
 
 
 .trending{
+    margin: 20px;
     display: grid;
     grid-gap:5px;
     padding:20px;
+    background-color: #292524;
+    border-radius: 29px;
    
 }
 
 .trend-card{
-    padding: 20px 40px 20px 20px;
-    background-color: lightskyblue;
+    
     display: grid;
     grid-template: 1fr / 1fr 2fr;
     grid-gap: 10px;
